@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    font-family: 'Quicksand', sans-serif;
+    box-shadow: 2px 2px 5px rgba(0, 0,0, 0.2);
+    display: flex;
+    height: 50px;
+    width: 100%;
+    color: #f5f5f5;
+
+}
+
+.menu{    
+    display: flex;
+    justify-content:space-around;
+    padding-top: 10px;
+    
+}
+
+.name{
+    font-size: 1.3em;
+    color: #333;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.menu > a{
+    color: #666;
+}
+.menu > a:hover{
+    text-decoration: none;
+    color: #999;
+}
+
+.container-fluid{
+    padding: 10px; 
+    display: grid;
+}
+
+.container-fluid > .presentation{
+    animation: drop 1.5s ease;
+}
+
+.container-fluid > .presentation> .avatar > img{
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0,0, 0.2);
+    width: 250px;
+}
+.container-fluid > .presentation > .about{
+    margin-top: 40px;
+}
+
+.container-fluid > .presentation > .about > h3{
+    font-weight: 300;
+    font-size: 2.3em;
+}
+
+.container-fluid > .presentation > .about > h4{
+    font-weight: 150;
+    font-size: 1.5em;
+}
+
+.container-fluid > .presentation > .about > h5{
+    font-weight: 100;
+    font-size: 1.3em;
+}
+
+
+.container-fluid > .projects{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card:hover{
+    box-shadow: 2px 2px 5px rgba(0, 0,0, 0.2);
+}
+
+.container-fluid > .projects > .title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.container-fluid > .contact, .container-fluid> .contact > .title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.container-fluid > .contact > .icons > img{
+    width: 30px;
+}
+.container-fluid > .contact >.icons > a:hover{
+    text-decoration: none;
+    color: #999;
+}
+
+.container-fluid > .contact >.icons > a{
+    margin-left: 10px;
+    color: #666;
+}
+
+.container-fluid > .contact> .icons{
+    padding: 10px;
+}
+
+.container-fluid > .iconsLink{
+    font-size: 10px;
+}
+
+@keyframes drop{
+    0%{
+        opacity: 0;
+        transform: translateY(-70px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
